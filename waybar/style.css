@@ -1,0 +1,77 @@
+* {
+
+    font-family: "BigBlueTermPlus Nerd Font Mono";
+    font-size: 14px;
+    
+}
+
+.TTYBar {
+    
+    background: #000;
+    
+}
+
+#clock {
+    padding: 0px 7px;
+    
+    background: #000;
+    color: #fff;
+    
+    
+    
+}
+
+#pulseaudio {
+    padding: 0px 7px;
+    
+    background: #ff0000;
+    color: #fff;
+    
+}
+
+#network {
+    padding: 0px 7px;
+    
+    background: #00ff00;
+    color: #fff;
+    
+}
+
+#window {
+    padding: 0px 7px;
+    
+    background: #0000ff;
+    color: #fff;
+}
+
+#workspaces button {
+    min-height: 0;
+    padding: 0px 4px;
+
+    background: #00ffff;
+    border: none;
+    border-radius: 0px;
+
+    color: #fff;
+
+}
+
+#workspaces button.active {
+    background: #8000ff;
+    color: #fff;
+}
+
+#workspaces button:hover{
+    background: #8000ff;
+    
+    color: #fff;
+
+    box-shadow: none;
+    transition: none;
+}
+
+#custom-os_button{
+    padding: 4px 5px 2px 7px;
+    background: #fff;
+    color: #000;
+}

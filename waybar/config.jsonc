@@ -1,0 +1,87 @@
+{
+    "name":             "TTYBar",
+    "layer":            "top",
+    "position":         "bottom",
+    "height":           "20",
+    "width":            "0",
+    "spacing":          "0",
+    
+    // Module Set
+
+    "modules-left": [
+
+        "clock",
+        "pulseaudio",
+        "network",
+        "hyprland/window"
+    
+    ],
+
+    "modules-center": [],
+
+    "modules-right": [
+        "hyprland/workspaces",
+        "custom/os_button"
+    ],
+
+    // Modules Config
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-d%}"
+    },
+
+    "pulseaudio": {
+
+        "format": "{volume}%{icon}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "󰅶 {icon} {format_source}",
+        "format-muted": "{volume}% 󰖁",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+
+            "headphone": "",
+            "headset": "",
+            "default": [" 󰕿", " 󱄡", " 󰖀", " 󰕾", " 󱄠"]
+
+        },
+
+        "on-click": "pavucontrol",
+
+        "scroll-step": 1
+    },
+
+    "network": {
+
+        "format-wifi": "{signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "format-linked": "{ifname} (No IP) 󰊗",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+
+    },
+
+    "hyprland/workspaces": {
+        "format": "{windows}",
+        "format-window-separator":" ",
+        "window-rewrite-default": " ",
+        "window-rewrite": {
+            "class<kitty>": "",
+            "class<yazi>": "",
+            "class<pcmanfm>": "",
+            "class<codium>": "",
+            "class<firefox>": ""
+            
+        }
+    },
+
+    "custom/os_button": {
+
+        "format":   "queijolgkboom",
+        "on-click": "rofi -show drun"
+        
+    }
+
+}
